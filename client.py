@@ -13,9 +13,9 @@ class game:
     def __init__(self):
         pygame.init()
         self.window=pygame.display.set_mode()
-        pygame.display.set_caption("Rock, Paper and syzer")
+        pygame.display.set_caption("Rock, Paper and scissor")
         self.c=-1 #choice
-        self.choices=['rock','paper','syzer'] #list of posible choices
+        self.choices=['rock','paper','scissor'] #list of posible choices
         self.turn=False #tells if it's our turn
         self.start=False #tells if the game is started
         self.winner="" #tells the winner

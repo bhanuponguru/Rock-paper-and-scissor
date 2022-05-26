@@ -1,5 +1,5 @@
-# rock, paper and syzer
-this is not a super online game yet, it's just my atempt for the creation of the famous, rock paper syzer game, my first project using networking.
+# rock, paper and scissor
+this is not a super online game yet, it's just my atempt for the creation of the famous, rock paper scissor game, my first project using networking.
 ## features
 * online game play.
 * multiple games are supported.

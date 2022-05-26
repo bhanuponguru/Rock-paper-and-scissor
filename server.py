@@ -55,8 +55,8 @@ class game:
         if self.player1.c >= 0 and self.player2.c >= 0 and not self.completed:
             self.completed=True #game will bee completed when both the player have a choice
             #evaluate the winner based on numerical value of choice
-            #for example, when player1 chose rock and player2 chose paper, then player1.c = 0 and player2.c = 1. we know that in this case paper is the winner. value of paper is 1. value of rock is 0. when we subtract player1.c and player2.c, we get -one. same works with paper and syzer too.
-            #and when player2 chose rock and player1 chose syzer, we know rock is the winner. that means player1.c = 2 and player2.c = 0. so player1 - player2 must give 2.
+            #for example, when player1 chose rock and player2 chose paper, then player1.c = 0 and player2.c = 1. we know that in this case paper is the winner. value of paper is 1. value of rock is 0. when we subtract player1.c and player2.c, we get -one. same works with paper and scissor too.
+            #and when player2 chose rock and player1 chose scissor, we know rock is the winner. that means player1.c = 2 and player2.c = 0. so player1 - player2 must give 2.
             if self.player1.c - self.player2.c == -1 or self.player1.c - self.player2.c == 2:
                 #send the winner to both the players.
                 self.player1.s.sendall(b'{"action":"winner","winner":"player2"}')
