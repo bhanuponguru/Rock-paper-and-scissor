@@ -72,9 +72,9 @@ class game:
 
 #a main class for server which handles all games and client connections.
 class server:
-    def __init__(self):
+    def __init__(self, port=54321):
         self.s=socket.socket()
-        self.s.bind(('', 54321))
+        self.s.bind(('', port))
         self.clients=[] #list of clients
         self.games=[] #list of games.
         #an index which will bee increased at each game creation. this will bee asigned as the id of the newly created game.
